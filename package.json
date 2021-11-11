@@ -1,0 +1,17 @@
+{
+  "name": "riichi_universe_hinabuild",
+  "version": "1.2.0",
+  "description": "Japanese riichi mahjong hand calculation",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HinanoAira/riichi.git"
+  },
+  "author": "雛野綾桜 <islakioriy@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HinanoAira/riichi#readme"
+}
