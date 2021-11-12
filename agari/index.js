@@ -110,12 +110,13 @@
         let res = []
         for (let i = 0; i < hai_arr.length; i++) {
             for (let ii = 0; ii < hai_arr[i].length; ii++) {
-                if (hai_arr[i][ii] >= 3) {
+                while (hai_arr[i][ii] >= 3) {
                     hai_arr[i][ii] -= 3
-                    if (check(hai_arr)) {
+                    if (check(hai_arr), true) {
                         res.push([ii+1+MPSZ[i]])
                     } else {
                         hai_arr[i][ii] += 3
+                        break
                     }
                 }
             }
