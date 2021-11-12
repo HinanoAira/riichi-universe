@@ -234,6 +234,8 @@ const YAKU =
         return checkChanta(o, allow) && !YAKU['純全帯么九'].check(o)
     }},
     "不純全":{"han":2, "isFuroMinus":true, "check":(o)=>{
+        if(!o.currentPattern.length)
+        return false
         for (let v of o.currentPattern) {
             if(typeof v == 'string'){
                 if(v[0] == '1' || v[0] == '9' || v[1] == 'z')

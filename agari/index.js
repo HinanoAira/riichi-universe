@@ -212,8 +212,10 @@
                 if (JSON.stringify(v) === JSON.stringify(vv))
                     is_duplicate = true
             }
-            if (!is_duplicate)
+            if (!is_duplicate){
+                if(v.length === 5)
                 final_res.push(v)
+            }
         }
         return final_res
     }

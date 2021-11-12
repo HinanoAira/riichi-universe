@@ -2,7 +2,7 @@ const Riichi = require('./index')
 const option = {}
 option.sanma = false
 option.tsumozon = false
-const riichi = new Riichi('11111111111111z', option)
+const riichi = new Riichi('234456m234s12267z', option)
 
 riichi.enableLocalYaku('八連荘')
 riichi.enableLocalYaku('大車輪')
