@@ -619,7 +619,7 @@ class Riichi {
         if (this.extra.includes('o'))
             this.allLocalEnabled = true
         
-        this.agariPatterns = agari(this.haiArray)
+        this.agariPatterns = agari(this.haiArray, this.furo.length)
         if (!this.agariPatterns.length)
             this.agariPatterns.push([])
         for (let v of this.agariPatterns) {

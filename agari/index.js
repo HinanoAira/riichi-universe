@@ -174,7 +174,7 @@
             res.push(second_res.sort())
         }
     }
-    const findAllAgariPatterns = (hai_arr)=>{
+    const findAllAgariPatterns = (hai_arr, furo_count)=>{
         hai_arr = [[...hai_arr[0]], [...hai_arr[1]], [...hai_arr[2]], [...hai_arr[3]]]
         res = []
         if (!check(hai_arr)) {
@@ -213,7 +213,7 @@
                     is_duplicate = true
             }
             if (!is_duplicate){
-                if(v.length === 5)
+                if(v.length === 5-furo_count)
                 final_res.push(v)
             }
         }
